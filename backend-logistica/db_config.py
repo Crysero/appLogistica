@@ -2,8 +2,9 @@ import mysql.connector
 
 def conectar():
     return mysql.connector.connect(
-        host="localhost",
+        host="switchyard.proxy.rlwy.net",
+        port=58196,  # Porta padrão do MySQL, número inteiro
         user="root",
-        password="",  # ou sua senha do MySQL
-        database="app logistica"
+        password="PxuHWEPWgGeTVamTiTBasShoPmKMpTNw",  # coloque a senha correta
+        database="railway"  # evite espaços no nome do banco
     )
